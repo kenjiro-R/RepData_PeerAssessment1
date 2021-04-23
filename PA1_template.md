@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
-    keep_md: true
+  html_document: 
+    keep_md: yes
 ---
 
 
@@ -19,7 +19,7 @@ output:
 ```
 
 ```
-## -- Attaching packages ---------------------------------------- tidyverse 1.3.0 --
+## -- Attaching packages ---------------- tidyverse 1.3.0 --
 ```
 
 ```
@@ -46,7 +46,7 @@ output:
 ```
 
 ```
-## -- Conflicts ------------------------------------------- tidyverse_conflicts() --
+## -- Conflicts ------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ```
@@ -58,7 +58,7 @@ output:
 
 ```
 ## 
-## -- Column specification ---------------------------------------------------------
+## -- Column specification ---------------------------------
 ## cols(
 ##   steps = col_double(),
 ##   date = col_date(format = ""),
@@ -106,7 +106,7 @@ total_steps_hist <- ggplot(data = total_steps,aes(mean_steps_day) )+
 total_steps_hist
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](figs/fig-unnamed-chunk-2-1.png)<!-- -->
 
 ```r
 ##Mean and median number of steps taken each day
@@ -151,7 +151,7 @@ daily_activity <- activity %>%
     interval_steps_plot
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](figs/fig-unnamed-chunk-3-1.png)<!-- -->
 
 ```r
 ##The 5-minute interval that, on average, contains the maximum number of steps
@@ -220,7 +220,7 @@ total_steps_hist2 <- ggplot(data = total_steps2 ,aes(mean_steps_day) )+
 total_steps_hist
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](figs/fig-unnamed-chunk-4-1.png)<!-- -->
 
 ```r
 ##Mean and median number of steps taken each day
@@ -318,6 +318,6 @@ ggplot(week_average, aes(interval, average)) +
         ylab("avarage number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](figs/fig-unnamed-chunk-5-1.png)<!-- -->
 
 
